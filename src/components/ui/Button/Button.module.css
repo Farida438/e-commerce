@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+gap: 30px;
+text-align: center;
+margin: 20px 0;
+}
+
+.btn {
+  width: 125px;
+  height: 50px;
+  background-color: #cbdcdd;
+  color: #333;
+  border-radius: 25px;
+  font-size: 15px;
+  font-family: "Roboto Mono", monospace;
+  border: none;
+   text-align: center;
+ display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+ 
+}
+
+.btn:hover {
+  scale: 1.3;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
+}
+
+

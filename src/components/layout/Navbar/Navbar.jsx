@@ -1,13 +1,13 @@
 import React from "react";
 import { assets } from "../../../assets/assets.jsx";
 import styles from "./Navbar.module.css";
-import {
-  Cart,
-  Theme,
-  User,
-  Lang,
-  Wishlist,
-} from "../../../assets/icons/Cart.jsx";
+import { NavLink } from "react-router-dom";
+// Replaced icon imports with react-icons
+import { FaShoppingBag as Cart } from "react-icons/fa";
+import { IoSunnyOutline as Theme } from "react-icons/io5";
+import { FaRegUser as User } from "react-icons/fa";
+import { BiWorld as Lang } from "react-icons/bi";
+import { FaRegHeart as Wishlist } from "react-icons/fa";
 
 const Navbar = () => {
   return (
@@ -25,33 +25,68 @@ const Navbar = () => {
         </div>
 
         <div className={styles.pages}>
-          <a href="">Home</a>
-          <a href="#">Shop</a>
-          <a href="#">About</a>
-          <a href="#">Contact</a>
-          <a href="#">FAQ</a>
+          <NavLink 
+            to="/home" 
+            className={({ isActive }) => 
+              isActive ? `${styles.link} ${styles.active}` : styles.link
+            }
+          >
+            Home
+          </NavLink>
+          <NavLink 
+            to="/shop" 
+            className={({ isActive }) => 
+              isActive ? `${styles.link} ${styles.active}` : styles.link
+            }
+          >
+            Shop
+          </NavLink>
+          <NavLink 
+            to="/about" 
+            className={({ isActive }) => 
+              isActive ? `${styles.link} ${styles.active}` : styles.link
+            }
+          >
+            About
+          </NavLink>
+          <NavLink 
+            to="/contact" 
+            className={({ isActive }) => 
+              isActive ? `${styles.link} ${styles.active}` : styles.link
+            }
+          >
+            Contact
+          </NavLink>
+          <NavLink 
+            to="/faq" 
+            className={({ isActive }) => 
+              isActive ? `${styles.link} ${styles.active}` : styles.link
+            }
+          >
+            FAQ
+          </NavLink>
         </div>
 
         <div className={styles.icons}>
-          <a href="/wishlist" className={styles.icon}>
+          <NavLink to="/wishlist" className={styles.iconhe}>
             <Wishlist />
-          </a>
+          </NavLink>
 
-          <a href="/cart" className={styles.icon}>
+          <NavLink to="/cart" className={styles.icon}>
             <Cart />
-          </a>
+          </NavLink>
 
-          <a href="#" className={styles.icon}>
+          <NavLink to="#" className={styles.icon}>
             <Theme />
-          </a>
+          </NavLink>
 
-          <a href="#" className={styles.icon}>
+          <NavLink to="#" className={styles.icon}>
             <Lang />
-          </a>
+          </NavLink>
 
-          <a href="#" className={styles.icon}>
+          <NavLink to="#" className={styles.icon}>
             <User />
-          </a>
+          </NavLink>
         </div>
       </div>
     </div>

@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.gif img {
+  width: 100%;
+  height: 750px;
+  align-self: center;
+  justify-self: center;
+}
+
+img:hover {
+  transform: none !important;
+  transition: none !important ;
+  scale: 1 !important;
+}
+
+.collection{
+    width: 100%;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    justify-content: center;
+}
+
+
+.collectionimg{
+  width: 100%;
+  height: 700px;
+  align-self: center;
+  justify-self: center;
+}
+
+h1{
+    text-align: center;
+     font-family: "Tangerine", cursive;
+   color: #333;
+   font-size: 45px;;
+}

@@ -15,6 +15,7 @@ import Admin from "./pages/Admin/Admin.jsx";
 import Notfound from "./pages/Notfound/Notfound.jsx";
 import Thankyou from "./pages/Thankyou/Thankyou.jsx";
 import Navbar from "./components/layout/Navbar/Navbar.jsx";
+import Footer from "./components/layout/Footer/Footer.jsx";
 
 const App = () => {
   return (
@@ -23,7 +24,7 @@ const App = () => {
       <Navbar/>
       <Routes>
         {/* Public Routes */}
-        <Route path="/" element={<Home />} />
+        <Route path="/home" element={<Home />} />
         <Route path="/about" element={<About />} />
 
         <Route path="/contact" element={<Contact />} />
@@ -46,6 +47,7 @@ const App = () => {
         {/* 404 Catch-all */}
         <Route path="*" element={<Notfound />} />
       </Routes>
+      <Footer />
     </div>
   );
 };
