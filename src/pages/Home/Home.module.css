@@ -17,26 +17,245 @@ img:hover {
   scale: 1 !important;
 }
 
-.collection{
-    width: 100%;
-    height: 800px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;    
-    justify-content: center;
+.collection {
+  width: 100%;
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-
-.collectionimg{
+.collectionimg {
   width: 100%;
   height: 700px;
   align-self: center;
   justify-self: center;
 }
 
-h1{
-    text-align: center;
-     font-family: "Tangerine", cursive;
-   color: #333;
-   font-size: 45px;;
+h1 {
+  text-align: center;
+  font-family: "Tangerine", cursive;
+  color: #333;
+  font-size: 45px;
+  margin-bottom: 30px;
+}
+.carusel {
+  background-color: #cbdcdd;
+  overflow: hidden;
+  position: relative;
+  padding: 20px 0;
+  width: 100%;
+}
+
+.caruselTrackContainer {
+  display: flex;
+  width: 100%;
+}
+
+.caruselTrack {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  flex-shrink: 0;
+  min-width: 100%;
+  animation: scroll 20s linear infinite;
+}
+
+.caruselTrack li {
+  font-size: 1.2rem;
+  white-space: nowrap;
+  padding: 10px 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.carusel:hover .caruselTrack {
+  animation-play-state: paused;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* Optional: Gradient fade effect at edges */
+.carusel {
+  mask: linear-gradient(
+    90deg,
+    transparent 0%,
+    black 10%,
+    black 90%,
+    transparent 100%
+  );
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .caruselTrack {
+    gap: 15px;
+    animation-duration: 15s;
+  }
+
+  .caruselTrack li {
+    font-size: 1rem;
+    padding: 8px 15px;
+  }
+}
+
+.section {
+  width: 100%;
+  height: 200px;
+  padding: 30px 0;
+  /* display: flex;
+  flex-direction: column;
+  align-items: center;    
+  justify-content: center; */
+}
+
+.carusel {
+  overflow: hidden;
+}
+
+.caruselTrack {
+  display: flex;
+  gap: 30px;
+  animation: scroll 20s linear infinite;
+}
+
+@keyframes scroll {
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.resitem {
+  height: 340px;
+  /* border: 1px solid red; */
+  /* padding: 10px 20px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.resitem .imgg {
+  width: 290px;
+  height: 290px;
+  transition: opacity 0.4s ease-in-out;
+}
+
+.resgrid {
+  display: grid;
+  /* border: 1px solid gray; */
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  padding: 0 100px;
+}
+
+.namecost {
+  display: flex;
+  justify-content: space-between;
+  /* border: 1px solid red; */
+  width: 60%;
+  align-items: center;
+  padding: 0 10px;
+}
+
+@media (max-width: 790px) {
+  .resgrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .collectionimg {
+    width: 100%;
+    height: 700px;
+    align-self: center;
+    justify-self: center;
+  }
+  .collection{
+    width: 100%;
+    height: 450px;
+  }
+}
+
+@media (min-width: 965px) {
+  .resitem {
+    height: 300px;
+  }
+
+  .resitem img {
+    width: 250px;
+    height: 250px;
+  }
+}
+
+
+.reds{
+  /* border: 3px solid red; */
+  width: 100%;
+  height: 200px;
+}
+
+
+.naming{font-family: "Denton Condensed", "Times New Roman";
+
+font-size: 14px;
+font-weight: 500;
+line-height: 22px;
+letter-spacing: 1px;
+}
+
+.cost{
+  font-family: "TT Fors", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 650;
+  letter-spacing: 3px;
+  
+}
+
+.colc{
+  text-align: left;
+ display: flex;
+  align-self: flex-start;
+  padding-left: 94px;
+  font-size: 15px;
+  letter-spacing: 3px;
+  color:gray;
+  font-weight: 400;
+  font-family: "Roboto Mono", monospace;
+}
+
+.resitem .hoverImage{
+ position: absolute;
+  top: 0;
+  left: 0;
+  /* transform: translateX(-50%); */
+  opacity: 0;
+  width: 290px; /* Match default image size */
+  height: 290px;
+}
+
+
+.resitem .imgg {
+  opacity: 1;
+}
+
+/* On hover: Hide default, show hover */
+.resitem:hover .imgg {
+  opacity: 0;
+}
+
+.resitem:hover .hoverImage{
+  opacity: 1;
+  transition: opacity 0.4s ease-in-out;
 }

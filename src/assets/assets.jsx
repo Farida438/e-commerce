@@ -14,6 +14,23 @@ import img9 from './photo/img9.jpg';
 import img10 from './photo/img10.jpg';
 import img11 from './photo/img11.jpg';
 import collection from './photo/collcetion.gif';
+import jewel1 from './photo/jewel1.jpg'
+import jewel2 from './photo/jewel2.jpg'
+import jewel3 from './photo/jewel3.webp'
+import jewel4 from './photo/jewel4.webp'
+import jewel5 from './photo/jewel5.webp'
+import jewel6 from './photo/jewel6.webp'
+import jewel7 from './photo/jewel7.webp'
+import jewel8 from './photo/jewel8.webp'
+import jewel9 from './photo/jewel9.webp'
+import jewel4hover from './photo/jewel4hover.jpg'
+import jewel5hover from './photo/jewel5hover.webp'
+import jewel6hover from './photo/jewel6hover.jpg'
+import jewel7hover from './photo/jewel7hover.jpg'
+import jewel8hover from './photo/jewel8hover.jpg'
+import jewel9hover from './photo/jewel9hover.jpg'
+
+
 
 export const assets = {
   catbird,
@@ -31,6 +48,21 @@ export const assets = {
   img9,
   img10,
   img11,
-  collection
+  collection,
+  jewel1,
+  jewel2,
+  jewel3,
+  jewel4,
+  jewel5,
+  jewel6,
+  jewel7,
+  jewel8,
+  jewel9,
+  jewel4hover,
+  jewel5hover,
+  jewel6hover,
+  jewel7hover,
+  jewel8hover,
+  jewel9hover
   // Add more assets as needed
 };
