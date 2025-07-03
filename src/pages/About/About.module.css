@@ -1,0 +1,620 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+.letter{
+    width: 100%;
+    height: 800px;
+    /* border: 1px solid red; */
+    display: flex;
+ 
+    justify-content: space-between;
+    align-items:normal;
+    padding: 50px 100px;
+    gap: 100px;
+}
+
+.about{
+    width: 440px;
+    height: 540px;
+    border-radius: 20px;
+   justify-self: end;
+}
+
+.head{
+    font-size: 60px;
+    font-weight: 700;
+}
+
+
+
+.rest{
+    text-align: left;
+    font-family:Taybirdie, sans-serif;
+}
+
+.founders{
+    font-size: 15px;
+    letter-spacing: 3px;
+    color: rgba(0,0,0, 0.7);
+}
+
+.founder{
+     font-family:Taybirdie, sans-serif;
+}
+
+
+
+.statsSection{
+    display: flex;
+    width: 100%;
+    height: 150px;
+    /* border: 1px solid red; */
+    align-items: center;
+    justify-content: center;
+    gap: 180px;
+    background-color: #cbdcdd;
+    margin-top: 10px;
+}
+
+.statBox{
+    text-align: center;
+    transition: scale 0.3s ease-in-out;
+    border: 5px solid#cbdcdd;
+    padding: 5px 12px;
+    border-radius: 15px;
+    box-shadow: 8px 10px 10px rgba(0,0,0, 0.5);
+    background-color: white;
+    /*  */
+}
+
+.anime{   
+   
+    font-size: 40px;
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 700;
+    color: #4C4C69;
+}
+
+.animes{
+    font-size: 40px;
+    font-family: Tangerine, cursive;
+     font-weight: 700;
+}
+
+.statBox:hover{
+    scale:1.1;
+    background-color: #cbdcdd;
+}
+.abt {
+  width: 100%;
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.5); /* Darken the image */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  color: #fff;
+  font-size: 5rem;
+  font-weight: bold;
+  font-family: Tangerine, cursive;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
+}
+
+
+/* 
+.letter {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+ 
+  padding: 80px 100px;
+
+  background-color: #fdfafa;
+  flex-wrap: wrap;
+  border: 1px solid red;
+} */
+/* 
+.item {
+  flex: 1;
+  min-width: 300px;
+} */
+
+.head {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #333;
+  font-family: 'Georgia', serif;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+
+.quote {
+  font-size: 25px;
+  font-style: italic;
+  color: #7a5c61;
+  margin-bottom: 30px;
+  border-left: 5px solid #dabebe;
+  padding-left: 15px;
+}
+
+.rest {
+  font-size: 25px;
+  /* line-height: 2; */
+  color: #444;
+  font-family: 'Fira Sans', sans-serif;
+  text-align: justify;
+}
+
+.founders {
+  margin-top: 20px;
+}
+
+
+.name {
+  font-size: 25px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+
+.sectionHeader {
+  text-align: center;
+  font-size: 2.8rem;
+  font-family: 'Georgia', serif;
+  margin-top: 60px;
+  margin-bottom: 30px;
+  color: #4C4C69;
+}
+
+.advantagesSection {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 60px 100px;
+  background-color: #fdfdfd;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.advantageItem {
+  flex: 1 1 calc(25% - 40px);
+  background: #fff;
+  border-radius: 20px;
+  padding: 40px 30px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  min-width: 250px;
+}
+
+.advantageItem:hover {
+  transform: translateY(-10px);
+  box-shadow: 8px 12px 35px rgba(0, 0, 0, 0.6);
+}
+
+.number {
+  font-size: 2.8rem;
+  font-weight: bold;
+  color: #c2a58b;
+  font-family: 'Georgia', serif;
+  margin-bottom: 10px;
+}
+
+.advTitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: #333;
+  font-family: 'Tangerine', cursive;
+}
+
+.advText {
+  font-size: 1.1rem;
+  color: #555;
+  font-family: 'Fira Sans', sans-serif;
+  line-height: 1.7;
+}
+
+.sectionHeader {
+  text-align: center;
+  font-size: 3rem;
+  font-family: 'Georgia', serif;
+  color: #4C4C69;
+  margin-top: 80px;
+  margin-bottom: 50px;
+}
+
+.teamSection {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+  padding: 0 100px 80px 100px;
+  background-color: #fefdfc;
+}
+
+.teamCard {
+  background: #C2A58B;
+  border-radius: 25px;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+  padding: 30px 20px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.teamCard:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 18px 35px rgba(0, 0, 0, 0.15);
+}
+
+.teamPhoto {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+  border: 3px solid #c2a58b;
+}
+
+.teamName {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #2e2e2e;
+  font-family: 'Fira Sans', sans-serif;
+}
+
+.teamRole {
+  font-size: 1rem;
+  color: #777;
+  margin-bottom: 15px;
+  font-style: italic;
+  letter-spacing: 0.3px;
+}
+
+.age {
+  font-style: normal;
+  font-weight: 500;
+  color: #a16e60;
+}
+
+.teamQuote {
+  font-size: 1rem;
+  color: #4c4c4c;
+  font-family: 'Georgia', serif;
+  line-height: 1.6;
+  padding: 0 10px;
+  margin-bottom: 15px;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.social {
+  font-size: 1.1rem;
+  color: #c2a58b;
+  background-color: #f5f2ef;
+  padding: 10px;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+.social:hover {
+  background-color: #c2a58b;
+  color: white;
+  transform: scale(1.1);
+}
+
+
+
+.abt {
+  width: 100%;
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.5); /* dark filter */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.abtContent {
+  text-align: center;
+  color: white;
+}
+
+.title {
+  color: #fff;
+  font-size: 5rem;
+  font-weight: bold;
+  font-family: Tangerine, cursive;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
+  margin-bottom: 30px;
+}
+
+.statsInline {
+  display: flex;
+  gap: 60px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.statBoxInline {
+  background-color: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  padding: 15px 25px;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.anime {
+  font-size: 36px;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.animes {
+  font-size: 24px;
+  font-family: Tangerine, cursive;
+  color: #ffffff;
+  margin-top: 5px;
+}
+
+
+
+/* Extra Small Devices (Phones) */
+@media (max-width: 576px) {
+  .abt {
+    height: 400px;
+  }
+
+  .title {
+    font-size: 2.5rem;
+    line-height: 1.2;
+    margin-bottom: 20px;
+  }
+
+  .statsInline {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-top: 0;
+  }
+
+  .statBoxInline {
+    width: 90%;
+    padding: 12px 15px;
+    border-radius: 10px;
+    backdrop-filter: blur(6px);
+  }
+
+  .anime {
+    font-size: 28px;
+  }
+
+  .animes {
+    font-size: 18px;
+  }
+
+  .letter {
+    flex-direction: column;
+    padding: 25px 20px;
+    gap: 25px;
+    height: auto;
+  }
+
+  .about {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+  }
+
+  .head {
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+    line-height: 1.2;
+  }
+
+  .quote {
+    font-size: 1rem;
+    margin-bottom: 15px;
+    padding-left: 12px;
+  }
+
+  .rest {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    letter-spacing: 0.4px;
+  }
+
+  .advantagesSection {
+    flex-direction: column;
+    padding: 25px 20px;
+    gap: 20px;
+  }
+
+  .advantageItem {
+    width: 100%;
+    padding: 20px 15px;
+    border-radius: 15px;
+  }
+
+  .number {
+    font-size: 2rem;
+  }
+
+  .advTitle {
+    font-size: 1.2rem;
+  }
+
+  .advText {
+    font-size: 0.95rem;
+  }
+
+  .sectionHeader {
+    font-size: 2rem;
+    margin: 40px 0 20px;
+  }
+
+  .teamSection {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 0 15px 40px;
+  }
+
+  .teamCard {
+    padding: 15px 10px;
+    border-radius: 15px;
+  }
+
+  .teamPhoto {
+    width: 90px;
+    height: 90px;
+  }
+
+  .teamName {
+    font-size: 1rem;
+  }
+
+  .teamRole {
+    font-size: 0.85rem;
+  }
+
+  .teamQuote {
+    font-size: 0.85rem;
+    padding: 0 5px;
+  }
+
+  .socials {
+    gap: 10px;
+    justify-content: center;
+    margin-top: 12px;
+  }
+
+  .social {
+    font-size: 0.9rem;
+    padding: 6px;
+  }
+
+}
+
+/* Narrow Tablets (778px breakpoint for better adjustment) */
+@media (max-width: 778px) {
+  .letter {
+    flex-direction: column;
+     padding: 40px; 
+    gap: 40px;
+    height: auto;
+  }
+
+  .statsInline {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .teamSection {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 40px 50px;
+    gap: 30px;
+  }
+
+  .advantagesSection {
+    flex-direction: column;
+    gap: 40px;
+  }
+}
+
+/* Tablets (medium screens ≤991px) */
+@media (max-width: 991px) {
+  .letter {
+    padding: 40px 40px;
+    flex-direction: column;
+    gap: 50px;
+    height: auto;
+  }
+
+  .advantagesSection {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 40px;
+  }
+
+  .advantageItem {
+    flex: 1 1 45%;
+    max-width: 100%;
+  }
+
+  .teamSection {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 40px 60px;
+    gap: 40px;
+  }
+}
+
+/* Small Desktop (≤1024px) */
+@media (max-width: 1024px) {
+  .abt {
+    height: 480px;
+  }
+
+  .statsInline {
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+
+  .advantagesSection {
+    padding: 60px 40px;
+  }
+
+  .teamSection {
+    padding: 0 40px 60px;
+  }
+
+  .about {
+    width: 100%;
+    height: auto;
+  }
+
+  .letter {
+    padding: 50px 60px;
+  }
+}

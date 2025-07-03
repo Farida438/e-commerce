@@ -97,38 +97,6 @@ h1 {
   );
 }
 
-/* Responsive adjustments */
-@media (max-width: 768px) {
-  .caruselTrack {
-    gap: 15px;
-    animation-duration: 15s;
-  }
-
-  .caruselTrack li {
-    font-size: 1rem;
-    padding: 8px 15px;
-  }
-}
-
-.section {
-  width: 100%;
-  height: 200px;
-  padding: 30px 0;
-  /* display: flex;
-  flex-direction: column;
-  align-items: center;    
-  justify-content: center; */
-}
-
-.carusel {
-  overflow: hidden;
-}
-
-.caruselTrack {
-  display: flex;
-  gap: 30px;
-  animation: scroll 20s linear infinite;
-}
 
 @keyframes scroll {
   to {
@@ -136,30 +104,21 @@ h1 {
   }
 }
 
-.resitem {
-  height: 340px;
-  /* border: 1px solid red; */
-  /* padding: 10px 20px; */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  overflow: hidden;
-}
 
 .resitem .imgg {
   width: 290px;
   height: 290px;
-  transition: opacity 0.4s ease-in-out;
+
+ 
 }
 
 .resgrid {
   display: grid;
   /* border: 1px solid gray; */
   grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
-  padding: 0 100px;
+  gap: 35px;
+  padding: 0 80px;
+  margin: 30px ;
 }
 
 .namecost {
@@ -189,27 +148,12 @@ h1 {
   }
 }
 
-@media (min-width: 965px) {
-  .resitem {
-    height: 300px;
-  }
-
-  .resitem img {
-    width: 250px;
-    height: 250px;
-  }
-}
 
 
-.reds{
-  /* border: 3px solid red; */
-  width: 100%;
-  height: 200px;
-}
 
 
-.naming{font-family: "Denton Condensed", "Times New Roman";
-
+.naming{
+  font-family: "Denton Condensed", "Times New Roman";
 font-size: 14px;
 font-weight: 500;
 line-height: 22px;
@@ -227,22 +171,24 @@ letter-spacing: 1px;
   text-align: left;
  display: flex;
   align-self: flex-start;
-  padding-left: 94px;
+  padding-left: 85px;
   font-size: 15px;
   letter-spacing: 3px;
   color:gray;
   font-weight: 400;
   font-family: "Roboto Mono", monospace;
+  /* border: 1px solid red; */
 }
 
 .resitem .hoverImage{
  position: absolute;
   top: 0;
-  left: 0;
+  left: 80px ;
   /* transform: translateX(-50%); */
   opacity: 0;
-  width: 290px; /* Match default image size */
-  height: 290px;
+   width: 270px;
+  height: 270px;
+  transition: opacity 0.4s ease-in-out;
 }
 
 
@@ -257,5 +203,218 @@ letter-spacing: 1px;
 
 .resitem:hover .hoverImage{
   opacity: 1;
-  transition: opacity 0.4s ease-in-out;
+
+
 }
+
+.resitem {
+  height: 340px;
+  border: 2px solid #F5EBE0;
+  background-color: #F5EBE0 ;
+  border-radius: 20px;
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  transition: scale 0.4s ease-in-out;
+}
+
+.resitem:hover{
+  scale: 1.1;
+
+}
+
+
+
+@media (max-width: 576px) {
+  .caruselTrack {
+    gap: 10px;
+    animation-duration: 12s;
+  }
+
+  .caruselTrack li {
+    font-size: 0.9rem;
+    padding: 6px 12px;
+  }
+}
+
+
+@media (min-width: 992px) {
+  .gif img {
+    height: 700px;
+  }
+
+  .collection {
+    height: 800px;
+  }
+
+  .collectionimg {
+    height: 700px;
+  }
+
+  .resgrid {
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0 80px;
+    gap: 35px;
+  }
+
+  .resitem {
+    height: 340px;
+  }
+
+  .resitem img,
+  .resitem .hoverImage {
+    width: 290px;
+    height: 290px;
+  }
+
+  .collectionTitle,
+  .sectionTitle {
+    font-size: 2.2rem;
+  }
+}
+
+
+@media (min-width: 577px) and (max-width: 991px) {
+  .gif img {
+    height: 450px;
+  }
+
+  .collection {
+    height: 500px;
+  }
+
+  .collectionimg {
+    height: 400px;
+  }
+
+  .resgrid {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 40px;
+    gap: 25px;
+  }
+
+  .resitem img,
+  .resitem .hoverImage {
+    width: 220px;
+    height: 220px;
+  }
+
+  .resitem {
+    height: auto;
+    padding: 15px;
+  }
+
+  .colc {
+    padding-left: 40px;
+    font-size: 14px;
+  }
+
+  .collectionTitle,
+  .sectionTitle {
+    font-size: 1.8rem;
+  }
+}
+
+
+
+@media (max-width: 576px) {
+  .gif img {
+    height: 300px;
+    object-fit: cover;
+  }
+
+  .collection {
+    height: auto;
+    padding: 20px 10px;
+  }
+
+  .collectionimg {
+    height: 250px;
+    object-fit: cover;
+  }
+
+  .resgrid {
+    grid-template-columns: 1fr;
+    padding: 0 20px;
+    gap: 20px;
+  }
+
+  .resitem {
+    height: auto;
+    padding: 15px;
+  }
+
+  .resitem img,
+  .resitem .hoverImage {
+    width: 100%;
+    height: auto;
+     top: 0;
+  left: 0px ;
+  }
+
+  .namecost {
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+
+  .colc {
+    padding-left: 10px;
+    font-size: 13px;
+  }
+
+  .section {
+    padding: 20px 10px;
+    height: auto;
+  }
+
+  .collectionTitle,
+  .sectionTitle {
+    font-size: 1.4rem;
+    padding: 0 10px;
+  }
+}
+
+
+.desktop {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.itm {
+  width: 100%;
+}
+
+.background {
+  width: 100%;
+  height: 410px;
+  object-fit: cover;
+}
+
+
+@media (max-width: 576px) {
+  .background {
+    height: 200px;
+  }
+}
+
+
+@media (min-width: 577px) and (max-width: 991px) {
+  .background {
+    height: 300px;
+  }
+}
+
+
+@media (min-width: 992px) {
+  .background {
+    height: 410px;
+  }
+}
+

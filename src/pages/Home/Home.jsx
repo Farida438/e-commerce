@@ -70,7 +70,7 @@ export default function Home() {
 
       <div className={styles.resgrid}>
         <div className={styles.resitem}>
-          <img src={assets.jewel1} />
+          <img src={assets.jewel1} className={styles.imggnohover}/>
 
           <div className={styles.namecost}>
             <p className={styles.naming}>Fairy Light Charm</p>
@@ -80,7 +80,7 @@ export default function Home() {
         </div>
 
         <div className={styles.resitem}>
-          <img src={assets.jewel2} />
+          <img src={assets.jewel2} className={styles.imggnohover}/>
           <div className={styles.namecost}>
             <p className={styles.naming}>Rosette Gold Charm</p>
             <p className={styles.cost}>85$</p>
@@ -88,7 +88,7 @@ export default function Home() {
           <p className={styles.colc}>Bittersweets NY</p>
         </div>
         <div className={styles.resitem}>
-          <img src={assets.jewel3} />
+          <img src={assets.jewel3} className={styles.imggnohover} />
           <div className={styles.namecost}>
             <p className={styles.naming}>Heart Beauty Necklace</p>
             <p className={styles.cost}>110$</p>
@@ -145,7 +145,7 @@ export default function Home() {
           <img src={assets.jewel9} className={styles.imgg} />
           <img src={assets.jewel9hover} className={styles.hoverImage} />
           <div className={styles.namecost}>
-            <p className={styles.naming}>Diamond Fairy Earrings</p>
+            <p className={styles.naming}>Diamond  Earrings</p>
             <p className={styles.cost}>200$</p>
              
           </div>
@@ -154,6 +154,12 @@ export default function Home() {
         </div>
       </div>
 
+      <div className={styles.desktop}>
+            <div className={styles.itm}>
+               <img src={assets.background}  className={styles.background}></img>
+      </div>
+
+    </div>
 
     </div>
   );

@@ -29,7 +29,13 @@ import jewel6hover from './photo/jewel6hover.jpg'
 import jewel7hover from './photo/jewel7hover.jpg'
 import jewel8hover from './photo/jewel8hover.jpg'
 import jewel9hover from './photo/jewel9hover.jpg'
-
+import background from './photo/EVE_BANNER_01_JEWELLERY_1400X300.webp'
+import about from './photo/about.jpg'
+import abt from './photo/abt.jpg'
+import amelia from './photo/pexels-eric-campbell-2150975659-31431917.jpg'
+import sophia from './photo/pexels-darina-belonogova-7959807.jpg'
+import angelina from './photo/aiony-haust-3TLl_97HNJo-unsplash.jpg'
+import james from './photo/james.avif'
 
 
 export const assets = {
@@ -63,6 +69,13 @@ export const assets = {
   jewel6hover,
   jewel7hover,
   jewel8hover,
-  jewel9hover
+  jewel9hover,
+  background,
+  about,
+  abt,
+  amelia,
+  sophia,
+  angelina,
+  james
   // Add more assets as needed
 };
